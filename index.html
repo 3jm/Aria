@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Aria Commands</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://scamming.life/fontawsomepro.js"></script>
+    </head>
+    <body class="bg-zinc-900">
+        <nav class="p-5 bg-neutral-900 shadow md:flex md:items-center md:justify-between z-50">
+            <div class="flex justify-between items-center">
+                <span class="text-2xl font-[Poppins] text-white cursor-pointer">
+                    <img class="h-10 inline" src="logo.png">
+                    Aria
+                </span>
+
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block text-white">
+                    <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-neutral-900 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300">
+                <li class="text-white mx-3 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:text-stone-400 duration-300">Home</a>
+                </li>
+                <li class="text-white mx-3 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:text-stone-400 duration-300">Commands</a>
+                </li>
+                <li class="text-white mx-3 my-6 md:my-0">
+                    <a href="#" class="text-xl hover:text-stone-400 duration-300">Discord</a>
+                </li>
+                <button class="bg-pink-500 text-white font-[Poppins] duration-300 px-6 py-2 mx-3 hover:bg-pink-700 rounded" onclick="location.href='https://discord.com/api/oauth2/authorize?client_id=1017189258743783464&permissions=8&scope=bot%20applications.commands'">
+                    <i class="fa-brands fa-discord"></i> Invite
+                </button>
+            </ul>
+        </nav>
+        <img class="mx-auto mt-40 -z-50" src="logo.png">
+        <div class="text-gray-200 text-5xl text-center font-[Poppins] mt-10">
+            <span>Aria</span>
+        </div>
+        <div class="text-gray-500 text-sm text-center font-[Poppins]">
+            <span>
+                Aria is a free to use bot. You can invite the bot by clicking <a href="https://discord.com/oauth2/authorize?client_id=1017189258743783464&permissions=8&scope=bot%20applications.commands" class="text-gray-600 hover:text-gray-400 transition-all ease-in duration-100">Here</a> or the invite button.<br>
+                If you need help using the bot there is a documentation page on each of the commands.<br>
+                <span class="text-gray-400">
+                    Thank you for using Aria
+                </span>
+            </span>
+        </div>
+        <script>
+            function Menu(e){
+                let list = document.querySelector('ul');
+                e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+            }
+        </script>
+    </body>
+</html>
