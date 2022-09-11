@@ -22,16 +22,19 @@
                     <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
                 </span>
             </div>
-            <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-neutral-900 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300">
+            <ul class="md:flex md:items-center z-[40] md:z-auto md:static absolute bg-neutral-900 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-300">
                 <li class="text-white mx-3 my-6 md:my-0">
-                    <a href="#" class="text-xl hover:text-stone-400 duration-300">Home</a>
+                    <a href="index.html" class="text-xl hover:text-stone-400 duration-300">Home</a>
                 </li>
                 <li class="text-white mx-3 my-6 md:my-0">
-                    <a href="#" class="text-xl hover:text-stone-400 duration-300">Commands</a>
+                    <a href="commands.html" class="text-xl hover:text-stone-400 duration-300">Commands</a>
                 </li>
+                <!---
+                We dont have a discord yet :(
                 <li class="text-white mx-3 my-6 md:my-0">
                     <a href="#" class="text-xl hover:text-stone-400 duration-300">Discord</a>
                 </li>
+                --->
                 <button class="bg-pink-500 text-white font-[Poppins] duration-300 px-6 py-2 mx-3 hover:bg-pink-700 rounded" onclick="location.href='https://discord.com/api/oauth2/authorize?client_id=1017189258743783464&permissions=8&scope=bot%20applications.commands'">
                     <i class="fa-brands fa-discord"></i> Invite
                 </button>
@@ -56,5 +59,11 @@
                 e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
             }
         </script>
+        <br /><br /><br /><br /><br />
+        <footer class="h-auto bg-black">
+            <div class="mx-auto max-w-screen-lg py-5 flex text-center flex-col justify-between text-gray-200 px-4 sm:px-6 sm:flex-row md:px-8 xl:px-0">
+                <p>Copyright © 2022 <span class="text-red-400">Aria</span></p>
+             </div>
+        </footer>
     </body>
 </html>
